@@ -5,13 +5,13 @@ import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.when;
 
-import org.apache.log4j.Level;
 import org.mockito.ArgumentMatcher;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import ch.qos.logback.classic.Level;
 import rocks.inspectit.agent.java.AbstractLogSupport;
 import rocks.inspectit.agent.java.config.impl.RegisteredSensorConfig;
 import rocks.inspectit.agent.java.core.ICoreService;
@@ -33,7 +33,7 @@ public class Log4JLoggingHookTest extends AbstractLogSupport {
 
 	// FATAL - ERROR - WARN - INFO - TRACE - DEBUG
 
-	private static final Level[] possibleLevels = new Level[] { Level.FATAL, Level.ERROR, Level.WARN, Level.INFO, Level.TRACE, Level.DEBUG };
+	private static final Level[] possibleLevels = new Level[] { Level.OFF, Level.ERROR, Level.WARN, Level.INFO, Level.TRACE, Level.DEBUG };
 
 	@DataProvider
 	public static Object[][] allCombinationShouldWeCapture() {

@@ -29,8 +29,8 @@ import org.jfree.chart.axis.TickUnits;
 import org.jfree.chart.plot.CombinedDomainXYPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.swt.ChartComposite;
 import org.jfree.data.Range;
-import org.jfree.experimental.chart.swt.ChartComposite;
 
 import rocks.inspectit.shared.all.communication.DefaultData;
 import rocks.inspectit.shared.all.util.TimeFrame;

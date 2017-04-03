@@ -9,3 +9,4 @@ version.properties
 /release
 /test-output
 /reports
+/target/
